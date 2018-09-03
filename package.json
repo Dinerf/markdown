@@ -1,0 +1,22 @@
+{
+  "name": "dinerfsmarkdown",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "getLinksFromMd()"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dinerf/markdown.git"
+  },
+  "author": "dinerf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dinerf/markdown/issues"
+  },
+  "homepage": "https://github.com/Dinerf/markdown#readme"
+}
