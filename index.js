@@ -7,12 +7,12 @@ function validateParameter(param) {
   if(param == null) {
     throw new Error('Empty input');
   } else if (typeof(param) !== 'string'){
-    throw new TypeError('Not a string')
+    throw new TypeError('Not a string');
   }
   return param;
 }
 function toObject(x) {
-  x = x.replace(/\[|\)/g, "").split('](');
-  let obj = {href: x[1], text: x[0]}
+  x = x.replace(/\[|\)/g, '').split('](');
+  let obj = {href: x[1], text: x[0]};
   return obj;
 }
