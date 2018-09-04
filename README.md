@@ -12,7 +12,7 @@ $node
 
 > extract.getLinksFromMd('Pesquisa no \[google\](www.google.com)'); // [{href: 'www.google.com', text: 'google'}]
 
-> extract.getLinksFromMd('Pesquisa no google'); //[]
+> extract.getLinksFromMd('Pesquisa no google'); // []
 
 ## **versão 1.0.2**
 * Funcionalidade: identifica e extrai links em um texto markdown e retorna um array com objetos.
