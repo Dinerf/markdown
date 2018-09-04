@@ -10,7 +10,7 @@ getLinksFromMd(text);
 $node
 > let extract = require('getLinksFromMd')
 
-> extract.getLinksFromMd('Pesquisa no [google](www.google.com)'); // [{href: 'www.google.com', text: 'google'}]
+> extract.getLinksFromMd('Pesquisa no \[google\](www.google.com)'); // [{href: 'www.google.com', text: 'google'}]
 
 > extract.getLinksFromMd('Pesquisa no google'); //[]
 
