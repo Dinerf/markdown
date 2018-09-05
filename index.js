@@ -3,6 +3,11 @@ module.exports.getLinksFromMd = function getLinksFromMd(str) {
   let markdown = validateParameter(str).match(link);
   return markdown ? markdown = markdown.map(toObject) : markdown = [];
 };
+function toObject(x) {
+  x = x.replace(/\[|\)/g, '').split('](');
+  let obj = {href: x[1], text: x[0]};
+  return obj;
+}
 function validateParameter(param) {
   if(param == null) {
     throw new Error('Empty input');
@@ -10,9 +15,4 @@ function validateParameter(param) {
     throw new TypeError('Not a string');
   }
   return param;
-}
-function toObject(x) {
-  x = x.replace(/\[|\)/g, '').split('](');
-  let obj = {href: x[1], text: x[0]};
-  return obj;
 }
